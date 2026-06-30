@@ -1,0 +1,80 @@
+.home {
+  min-height: 100vh;
+  padding: 4rem 1.5rem;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: grid;
+  gap: 1rem;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #555;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+.description {
+  max-width: 640px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button,
+button {
+  border: 1px solid #222;
+  border-radius: 999px;
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.primary-button {
+  background: #222;
+  color: #fff;
+}
+
+.secondary-button,
+button {
+  background: transparent;
+  color: #222;
+}
+
+.status-card {
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.status-card h2,
+.status-card p {
+  margin: 0;
+}
+
+.api-status {
+  font-weight: 600;
+}

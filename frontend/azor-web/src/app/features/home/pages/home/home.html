@@ -1,0 +1,34 @@
+<main class="home">
+  <section class="hero">
+    <p class="eyebrow">Sistema de Gestão Financeira Web</p>
+
+    <h1>Azor</h1>
+
+    <p class="description">
+      Um projeto pessoal para estudar desenvolvimento web, arquitetura de software
+      e regras de negócio financeiras com .NET, Angular e SQL Server.
+    </p>
+
+    <div class="actions">
+      <a routerLink="/register" class="primary-button">Criar conta</a>
+      <a routerLink="/login" class="secondary-button">Entrar</a>
+    </div>
+  </section>
+
+  <section class="status-card">
+    <h2>Status do sistema</h2>
+
+    <p>
+      Use este botão para verificar se o frontend Angular consegue se comunicar
+      com o backend ASP.NET Core.
+    </p>
+
+    <button type="button" (click)="testApiConnection()">
+      Testar conexão com a API
+    </button>
+
+    <p class="api-status">
+      {{ apiStatus() }}
+    </p>
+  </section>
+</main>
