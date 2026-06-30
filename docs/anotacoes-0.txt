@@ -1,0 +1,3 @@
+Referência:
+https://github.com/frappe/erpnext
+https://erpnext-demo.frappe.cloud/app/home
