@@ -1,0 +1,31 @@
+Atualização Geral do sistema:
+winget upgrade --all
+
+* Arrumar o ambiente atualizando tudo e removendo software defasados
+
+> dotnet --version
+> node -v
+> npm -v
+> git --version
+> ng version
+
+.NET 10.0.301
+C# 14
+Entity Framework Core 10.0.9
+Node v24.18.0
+NPM v11.17.0
+Angular v22.0.4
+Git v2.54.0
+VS Code v1.126
+
+Atualização do Entity Framework Core:
+> dotnet tool install --global dotnet-ef
+
+Atualização do Node:
+> winget install OpenJS.NodeJS.LTS
+
+Atualização do NPM:
+> npm install -g npm@latest
+
+Atualização do Angular:
+> npm install -g @angular/cli@latest

@@ -1,0 +1,36 @@
+# Plano Inicial do Azor: Documentação Primeiro
+
+## Resumo
+- Começar pelo fundamento público do projeto: visão, arquitetura, escopo do MVP e roteiro de aprendizado.
+- Corrigir e reescrever o `README.md` para servir como vitrine de portfólio e ponto de partida para recrutadores.
+- Criar documentação curta e iniciante sobre monólito modular, Clean Architecture leve, módulo financeiro e decisões técnicas.
+- Registrar que o MVP terá login simples com JWT, mas sem ASP.NET Identity completo nesta primeira fase.
+- Atualizar o tooling do frontend antes do scaffold Angular, pois o ambiente atual tem Angular CLI 15/Node 18 e o Angular suportado atualmente exige Node mais novo, conforme [Angular version compatibility](https://angular.dev/reference/versions).
+
+## Mudanças Principais
+- Reestruturar `README.md` com: objetivo do projeto, stack, motivação profissional, arquitetura proposta, status, roadmap e links de contato.
+- Criar `docs/architecture.md` explicando, em nível iniciante: Domain, Application, Infrastructure, API, Angular por funcionalidades e dependências permitidas.
+- Criar `docs/finance-mvp.md` com o recorte funcional: contas, categorias, lançamentos, receitas, despesas, transferências, saldo por conta, saldo consolidado e dashboard.
+- Criar `docs/learning-public.md` com ideias de posts LinkedIn: decisão de stack, arquitetura simples, modelagem financeira, erros aprendidos e evolução do MVP.
+- Documentar cada decisão técnica no formato: o que é, por que usar, o que evitar e como aplicar no Azor.
+
+## Interfaces Futuras Definidas Na Documentação
+- Entidades principais previstas: `FinancialAccount`, `Category`, `Transaction`, `Transfer`, `User`.
+- Tipos de lançamento previstos: `Income`, `Expense`, `Transfer`.
+- Casos de uso iniciais previstos: criar/listar contas, criar/listar categorias, registrar receita, registrar despesa, registrar transferência e consultar saldos.
+- Autenticação prevista: JWT simples no MVP, com usuário único ou cadastro básico, sem permissões avançadas.
+- API futura: controllers REST simples, DTOs explícitos e validação na camada Application.
+
+## Testes e Aceitação
+- Verificar se a documentação permite que outro desenvolvedor entenda o projeto sem explicação verbal.
+- Confirmar que o MVP ficou pequeno o bastante para implementar em etapas semanais.
+- Conferir se nenhuma decisão pesada foi introduzida: sem microserviços, CQRS complexo, mensageria, cache distribuído ou abstrações prematuras.
+- Validar se o README comunica bem valor de portfólio: problema, stack, arquitetura, aprendizado e próximos passos.
+- Usar a documentação da Microsoft como referência para C# 14/.NET 10, conforme [What's new in C# 14](https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-14).
+
+## Assumptions
+- O primeiro marco é documentação, não scaffold de código.
+- O projeto será monorepo com backend e frontend no mesmo repositório.
+- O backend usará .NET 10/C# 14, já disponível localmente pelo SDK `10.0.301`.
+- O frontend será atualizado antes de ser criado, para evitar nascer com Angular antigo.
+- O tom da documentação será didático, público e alinhado à recolocação profissional.
