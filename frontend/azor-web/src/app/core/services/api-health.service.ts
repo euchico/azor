@@ -15,7 +15,7 @@ export interface ApiHealthResponse {
 export class ApiHealthService {
   private readonly http = inject(HttpClient);
 
-  private readonly apiUrl = 'http://localhost:5041/api/health';
+  private readonly apiUrl = 'https://azor-api.onrender.com/api/health';
 
   getHealth(): Observable<ApiHealthResponse> {
     return this.http.get<ApiHealthResponse>(this.apiUrl);
