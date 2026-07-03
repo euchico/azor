@@ -15,7 +15,8 @@ public class Program
                 policy
                     .WithOrigins(
                         "http://localhost:4200",
-                        "https://localhost:4200"
+                        "https://localhost:4200",
+                        "https://projeto-azor.vercel.app"
                     )
                     .AllowAnyHeader()
                     .AllowAnyMethod();

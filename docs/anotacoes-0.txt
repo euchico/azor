@@ -1,3 +1,10 @@
 Referência:
 https://github.com/frappe/erpnext
 https://erpnext-demo.frappe.cloud/app/home
+
+Os repositórios de referência continuam válidos, mas agora eu priorizaria nesta ordem:
+
+jasontaylordev/CleanArchitecture — referência principal para Clean Architecture com .NET e Angular.
+ardalis/CleanArchitecture — referência conceitual para entender separação de camadas.
+rafaelfgx/Architecture — interessante porque tem mais proximidade com .NET, Angular, EF Core e SQL Server.
+phongnguyend/Practical.CleanArchitecture — referência avançada para consultar mais para frente.
