@@ -1,0 +1,5 @@
+**/bin/
+**/obj/
+Web/ClientApp/node_modules/
+Web/ClientApp/.angular/
+Web/ClientApp/dist/
