@@ -1,0 +1,11 @@
+<main class="private-page">
+  <section class="private-card">
+    <h1>Área privada</h1>
+    <p>Você está autenticado no Azor.</p>
+    @if (email()) {
+      <p>Usuário: {{ email() }}</p>
+    }
+    <button type="button" (click)="logout()">Sair</button>
+    <p><a routerLink="/">Voltar para o início</a></p>
+  </section>
+</main>

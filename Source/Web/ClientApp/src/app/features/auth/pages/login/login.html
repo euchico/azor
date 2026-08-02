@@ -1,24 +1,26 @@
 <main class="auth-page">
   <section class="auth-card">
     <h1>Entrar</h1>
+    <p>Entre para acessar a área privada do Azor.</p>
 
-    <p>
-      Esta será a tela de login do Azor. A autenticação real será implementada
-      em uma etapa futura.
-    </p>
-
-    <form>
+    <form [formGroup]="form" (ngSubmit)="submit()">
       <label>
         E-mail
-        <input type="email" placeholder="seu@email.com" />
+        <input type="email" formControlName="email" placeholder="seu@email.com" autocomplete="email" />
       </label>
 
       <label>
         Senha
-        <input type="password" placeholder="Sua senha" />
+        <input type="password" formControlName="password" placeholder="Sua senha" autocomplete="current-password" />
       </label>
 
-      <button type="button">Entrar</button>
+      @if (errorMessage()) {
+        <p class="error-message">{{ errorMessage() }}</p>
+      }
+
+      <button type="submit">Entrar</button>
     </form>
+
+    <p>Não tem uma conta? <a routerLink="/register">Cadastre-se</a>.</p>
   </section>
 </main>
