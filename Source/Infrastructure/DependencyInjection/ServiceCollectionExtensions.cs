@@ -28,7 +28,7 @@ public static class ServiceCollectionExtensions
                 options.Password.RequireUppercase = true;
                 options.Password.RequireNonAlphanumeric = false;
             })
-            .AddEntityFrameworkStores<AzorDbContext>();
+            .AddUserStore<AzorUserStore>();
 
         services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
         services.AddScoped<IAuthenticationService, IdentityAuthenticationService>();
