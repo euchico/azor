@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Persistence.Migrations
 {
-    [DbContext(typeof(AzorDbContext))]
+    [DbContext(typeof(AzorContext))]
     partial class AzorDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -25,6 +25,7 @@ namespace Infrastructure.Persistence.Migrations
             modelBuilder.Entity("Infrastructure.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
+                        .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")

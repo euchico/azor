@@ -4,16 +4,19 @@ using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace Infrastructure.Persistence.Migrations
 {
-    [DbContext(typeof(AzorDbContext))]
-    partial class AzorDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(AzorContext))]
+    [Migration("20260804030558_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -25,6 +28,7 @@ namespace Infrastructure.Persistence.Migrations
             modelBuilder.Entity("Infrastructure.Identity.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
+                        .HasMaxLength(450)
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("AccessFailedCount")

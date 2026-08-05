@@ -12,7 +12,7 @@ namespace Infrastructure.Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "AspNetRoles",
+                name: "Roles",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -26,7 +26,7 @@ namespace Infrastructure.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetUsers",
+                name: "Users",
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -51,7 +51,7 @@ namespace Infrastructure.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetRoleClaims",
+                name: "RoleClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -72,7 +72,7 @@ namespace Infrastructure.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AspNetUserClaims",
+                name: "UserClaims",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
